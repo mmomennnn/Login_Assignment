@@ -3,22 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Test</title>
+    <title>Login Page</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet" >
-    <style>
-            .Regular {           
-                padding: 50px;     
-                vertical-align:text-top;                
-                font-family: "Segoe UI SemiLight","sans-serif";                               
-                text-decoration:none;}
-    </style>
+    <link href="./css/style.css" rel="stylesheet" >     
   </head>
   <body>
+
+    <section id="login">
+      <div class="container">
+        <div class="login-content text-center w-75 m-auto my-5 p-5 boxShadow">
+          <div class="header pb-4">
+            <h1>Smart Login System</h1>
+          </div>
+          <div class="content">
+            <input type="email" id="emailLoginInput" class="form-control text-white mb-3 bg-transparent" placeholder="Enter your email">
+            <input type="password" id="passwordLoginInput" class="form-control text-success-emphasis mb-4 bg-transparent" placeholder="Enter your password">
+          </div>
+          <div class="submit-btn">
+            <button id="loginBtn" class="btn btn-primary text-white w-50 d-block m-auto">Login</button>
+          </div>
+          <div class="account-question mt-3">
+            <p class="text-success-emphasis">Don't have an account? <a href="./pages/signup.html" class="text-decoration-none text-secondary">Sign up</a></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
     
-    
-    <p class="text-primary Regular">Hello, world!</p>
+  
+
     <script src="./js/bootstrap.bundle.min.js" ></script>
     <script src="./js/index.js" ></script>
-
   </body>
 </html>
